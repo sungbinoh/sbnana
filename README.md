@@ -44,3 +44,33 @@ source /exp/sbnd/app/users/sungbino/sbnana_test/localProducts_larsoft_v09_78_06_
 mrbsetenv
 setup sam_web_client
 ```
+
+## Samples
+
+Sample lists from https://sbnsoftware.github.io/sbn/sbnprod_wiki/sample
+
+### BNB + Cosmics GiBUU MC2023B (v09_75_03_02)
+
+| CAF or Flat CAF  | samweb definition |
+| ------------- | ------------- |
+| CAF  | official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_sbnd  |
+| Flat CAF  |  official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_flat_caf_sbnd  |
+
+### BNB + Cosmics GENIE CV MC2023B (v09_75_03_02)
+
+| CAF or Flat CAF  | samweb definition |
+| ------------- | ------------- |
+| CAF  | official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_sbnd  |
+| Flat CAF  |  official_MCP2023B_prodoverlay_corsika_cosmics_proton_genie_rockbox_sce_caf_flat_caf_sbnd  |
+
+### Running filelisting.py
+
+In ./SBNAna/scripts
+```
+python3 filelisting.py <output file name> <input samweb definition>
+```
+
+Example :
+```
+python3 filelisting.py filelist_flat_caf_MC2023B_BNB_Cosmics_GiBUU.txt official_MCP2023B_prodoverlay_corsika_cosmics_proton_gibuu_dirtpropagation_sbnd_caf_flat_caf_sbnd
+```
